@@ -55,7 +55,7 @@ function App() {
           </a>
 
           <a
-            href="https://github.com/dvm-bitspilani/foodfest26/releases/download/Android-v2/food-fest-app.apk"
+            href="https://drive.google.com/drive/folders/1coIfhElK5TWtaDc_99cO7vOKniMUGfVT?usp=sharing"
             className="cyber-btn secondary"
             // onClick={(e) => e.preventDefault()}
           >
