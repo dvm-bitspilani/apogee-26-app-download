@@ -55,7 +55,7 @@ function App() {
           </a>
 
           <a
-            href="https://github.com/dvm-bitspilani/foodfest26/releases/download/android/food-fest26.apk"
+            href="https://github.com/dvm-bitspilani/foodfest26/releases/download/Android-v2/food-fest-app.apk"
             className="cyber-btn secondary"
             // onClick={(e) => e.preventDefault()}
           >
