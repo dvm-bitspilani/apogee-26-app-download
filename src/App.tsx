@@ -36,7 +36,12 @@ function App() {
         <h2>DOWNLOAD THE APP NOW</h2>
 
         <div className="btn-group">
-          <a href="#" className="cyber-btn" onClick={(e) => e.preventDefault()}>
+          <a
+            href="https://apps.apple.com/in/app/apogee-2026/id6758733305"
+            target="_blank"
+            className="cyber-btn"
+            // onClick={(e) => e.preventDefault()}
+          >
             {/* <img
               src="/images/Apple_logo_black.svg"
               alt="Apple"

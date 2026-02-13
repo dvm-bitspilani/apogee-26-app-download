@@ -145,7 +145,7 @@ h2 {
   position: relative;
   overflow: hidden;
   transition: all 0.3s ease;
-  clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+  clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -153,10 +153,12 @@ h2 {
   white-space: nowrap; /* Prevent text wrapping */
 }
 
+
 .btn-icon {
   aspect-ratio: 1 / 1;
   height: 28px;
   width: auto;
+  flex-shrink: 0;
 }
 
 .btn-icon.apple-icon {
@@ -234,8 +236,10 @@ footer {
   }
   
   .cyber-btn {
-    width: 80%;
+    width: 90%; /* Wider button on mobile */
+    max-width: 320px;
     justify-content: center;
-    padding: 1.2rem; /* Larger touch target */
+    padding: 1rem; /* Adjust padding */
+    font-size: 0.9rem; /* Ensure text fits */
   }
 }
