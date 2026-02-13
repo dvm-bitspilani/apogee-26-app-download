@@ -37,15 +37,8 @@ body {
   width: 100%;
 }
 
-/* Glitch Effect Keyframes */
-@keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
-  100% { transform: translate(0); }
-}
+/* Glitch Effect Keyframes Removed - Using react-powerglitch */
+/* @keyframes glitch { ... } */
 
 @keyframes scanline {
   0% { transform: translateY(-100%); }
@@ -92,12 +85,13 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-grow: 1; /* Take up remaining space */
   text-align: center;
   position: relative;
   overflow: hidden; /* Ensure no internal scrolling */
+  padding: 2vh 0; /* Add some padding to prevent elements hitting edges */
 }
 
 /* Hero Text */
@@ -106,11 +100,11 @@ h1 {
   font-size: clamp(2rem, 8vw, 4rem); /* Responsive font size */
   line-height: 1.1;
   text-transform: uppercase;
-  margin-bottom: 2vh;
+  margin: 0;
   position: relative;
   color: var(--text-main);
   text-shadow: 2px 2px var(--neon-pink), -2px -2px var(--neon-cyan);
-  animation: glitch 3s infinite alternate-reverse;
+  /* animation: glitch 3s infinite alternate-reverse; */
 }
 
 h2 {
@@ -119,7 +113,7 @@ h2 {
   color: var(--neon-yellow);
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 6vh;
+  margin: 0;
   text-shadow: 0 0 10px rgba(252, 238, 10, 0.5);
 }
 

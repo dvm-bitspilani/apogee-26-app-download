@@ -1,12 +1,9 @@
-import { useEffect, useState } from "react";
 import "./App.css";
 
-function App() {
-  const [mounted, setMounted] = useState(false);
+import { useGlitch } from "react-powerglitch";
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+function App() {
+  const glitch = useGlitch();
 
   return (
     <>
@@ -27,7 +24,7 @@ function App() {
       </header>
 
       <main className="container">
-        <h1 className={mounted ? "glitch-active" : ""}>
+        <h1 ref={glitch.ref}>
           ENTIRE FEST AT
           <br />
           <span style={{ color: "var(--neon-cyan)" }}>YOUR FINGERTIPS!</span>
@@ -58,9 +55,9 @@ function App() {
           </a>
 
           <a
-            href="#"
+            href="https://github.com/dvm-bitspilani/foodfest26/releases/download/android/food-fest26.apk"
             className="cyber-btn secondary"
-            onClick={(e) => e.preventDefault()}
+            // onClick={(e) => e.preventDefault()}
           >
             {/* <img
               src="/images/android_logo_black.svg"
