@@ -33,7 +33,7 @@ function App() {
         <h2>DOWNLOAD THE APP NOW</h2>
 
         <div className="btn-group">
-          <a
+          {/*<a
             href="https://foodfest.bits-apogee.org"
             target="_blank"
             className="cyber-btn"
@@ -49,7 +49,7 @@ function App() {
               />
             </svg>
             Use without download
-          </a>
+          </a>*/}
 
           <a
             href="https://apps.apple.com/in/app/apogee-2026/id6758733305"
