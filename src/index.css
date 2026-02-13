@@ -171,6 +171,10 @@ h2 {
   fill: #000;
 }
 
+.cyber-btn:hover .btn-icon {
+  fill: #000;
+}
+
 .cyber-btn:hover {
   background: var(--neon-cyan);
   color: var(--bg-color);
