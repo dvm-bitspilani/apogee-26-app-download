@@ -75,16 +75,17 @@ header {
 }
 
 .logo {
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: clamp(1.2rem, 4vw, 1.5rem); /* Responsive font size */
-  color: var(--neon-cyan);
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+  /* Removed font styles, using image now */
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: center;
+}
+
+.main-logo {
+  height: clamp(40px, 8vh, 80px); /* Responsive logo size */
+  width: auto;
+  /* Assuming logo might be black, add filter just in case, or remove if not needed */
+  filter: drop-shadow(0 0 5px rgba(0, 243, 255, 0.5)); 
 }
 
 /* Main Content */
@@ -148,8 +149,30 @@ h2 {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   white-space: nowrap; /* Prevent text wrapping */
+}
+
+.btn-icon {
+  aspect-ratio: 1 / 1;
+  height: 28px;
+  width: auto;
+}
+
+.btn-icon.apple-icon {
+  fill: var(--neon-cyan);
+}
+
+.btn-icon.android-icon {
+  fill: var(--neon-pink);
+}
+
+.cyber-btn:hover .btn-icon.apple-icon {
+  fill: #000;
+}
+
+.cyber-btn:hover .btn-icon.android-icon {
+  fill: #000;
 }
 
 .cyber-btn:hover {
@@ -190,19 +213,6 @@ footer {
 @keyframes beat {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.2); }
-}
-
-/* Scanline Overlay */
-.scanline {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  background: rgba(0, 243, 255, 0.05);
-  animation: scanline 8s linear infinite;
-  pointer-events: none;
-  z-index: 999;
 }
 
 /* Responsive adjustments for very small screens or landscape mobile */
